@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Portfolio -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <link rel="stylesheet" href="./styles/modern-normalize.css" />
+    <link rel="stylesheet" href="./styles/components/about.css" />
+    <link rel="stylesheet" href="./styles/components/contact.css" />
+    <link rel="stylesheet" href="./styles/components/featured.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/hero.css" />
+    <link rel="stylesheet" href="./styles/components/mobile.css" />
+    <link rel="stylesheet" href="./styles/components/work.css" />
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../public/M icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madhan Showcase</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="/">Home</a>
+          </li>
+          <li>
+            <a class="header__link" href="#about1">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured1">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="./public/Madhan-Resume.pdf" target="_blank">Résumé</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a class="mobile-nav__link" href="/">Home</a></li>
+          <li><a class="mobile-nav__link" href="#about1">About</a></li>
+          <li><a class="mobile-nav__link" href="#featured1">Work</a></li>
+          <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="./public/Madhan-Resume.pdf" target="_blank">Résumé</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="./public/Hero.jpg" alt="Profile Picture" />
+        <h2 class="hero__subtitle">Hi, I'm Madhan 👋</h2>
+        <h1 class="hero__title">
+          Digital & UX/UI <br />
+          Designer.
+        </h1>
+        <p class="hero__description">
+          Always looking forward to get the extraordinary from the ordinary!
+        </p>
+        <p class="hero__description2">
+          Please have a seat, <strong>scroll down</strong> <br />and I'll get
+          you a nice cup of coffee.
+        </p>
+        <a
+          id="about1"
+          class="hero__btn btn"
+          href="mailto:madharaj791@gmail.com"
+          target="_blank"
+          >Say Hello!</a
+        >
+      </section>
+
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            I love building satisfying
+            <strong>graphic design experiences</strong> and I am passionate
+            about <strong>user experience design</strong>, find imaginative ways
+            to communicate ideas and believe that beauty in design matters.
+          </p>
+          <p class="about__description">
+            A proven expert designer based in Chicago with UX/UI, creative and
+            conceptual skills, exceptional attention to detail, and strong
+            ability to collaborate with multiple stakeholders. Brings more than
+            8+ years of diverse spectrum of experience working in a wide array
+            of industries ranging from digital to print and promotional product
+            design using Adobe creative suite and Figma.
+          </p>
+          <p class="about__description">
+            Well-versed in conceptual thinking, creative strategy, brand visual
+            systems, and client presentation. I am fueled by my curiosity and
+            desire to never stop learning!
+          </p>
+
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Capabilities</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">Digital Design</li>
+              <li class="about__list">UX/UI Design</li>
+              <li class="about__list">Branding</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">HTML/CSS/JS</li>
+              <li class="about__list">Motion Design</li>
+              <li class="about__list">Communication Design</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            class="about__img lazy loading"
+            src="./public/blank1810px.jpg"
+            data-src="./public/Profile.jpg"
+            alt="Profile Picture"
+          />
+        </div>
+      </section>
+      <div id="featured1">
+        <p><br /></p>
+      </div>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle"><strong>Featured Project</strong></h3>
+                <div class="featured__wrapper">
+          <h2 class="featured__title">Granthium Corporation</h2>
+          <a
+            class="featured__link"
+            href="https://granthium.net/"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="featured__description">
+          Granthium Corporation, a Chicago based firm working on specialized
+          Domains, providing advanced Technology Solutions and Services.
+        </p>
+        <p class="featured__description">
+          I executed visual redesigning of Granthium’s website, solving business
+          challenges through User Research, Information Architecture,
+          Interaction Design, Visual Design and Prototyping. Additionally, I
+          implemented UI design systems with mobile-first approach for reaching
+          wider audience and scalability.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tools Used</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">UX/UI</li>
+              <li class="featured__info">Figma</li>
+              <li class="featured__info">Adobe Creative Suite</li>
+              <li class="featured__info">HTML/CSS/JS</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project Type</h3>
+            <p class="featured__info">Web Development</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">Mar 2023 - Present</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              data-src="./public/Granthium 1.PNG"
+              src="./public/blank1920px.jpg"
+              alt="Granthium_page_1"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              data-src="./public/Granthium 2.PNG"
+              src="./public/blank1920px.jpg"
+              alt="Granthium_page_2"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              data-src="./public/Granthium 3.PNG"
+              src="./public/blank1920px.jpg"
+              alt="Granthium_page_3"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              data-src="./public/Granthium 4.PNG"
+              src="./public/blank1920px.jpg"
+              alt="Granthium_page_4"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              data-src="./public/Granthium 5.PNG"
+              src="./public/blank1920px.jpg"
+              alt="Granthium_page_5"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              data-src="./public/Granthium 6.PNG"
+              src="./public/blank1920px.jpg"
+              alt="Granthium_page_6"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              data-src="./public/Granthium 7.PNG"
+              src="./public/blank1920px.jpg"
+              alt="Granthium_page_7"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              data-src="./public/Granthium 8.PNG"
+              src="./public/blank1920px.jpg"
+              alt="Granthium_page_8"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">Checkout a few of my works</p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">iLead Tax Academy</h3>
+          <div class="work__img-wrapper work__image1">
+            <img
+              class="lazy loading"
+              data-src="./public/iLeadCover.jpg"
+              src="./public/blank900px.jpg"
+              alt="Project 1"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">iLead Tax Academy</h3>
+            <p class="work__project-description1">
+              iLead Tax Academy, a US taxation company based out of Hyderabad,
+              India.
+            </p>
+            <p class="work__project-description2">
+              I oversaw visual design projects from concept to delivery,
+              developing UI mockups and prototypes that clearly illustrate how
+              websites function and look. I also conducted usability tests and
+              layout adjustments based on user feedback and adhere to style
+              standards on fonts, colors and images maintaining brand
+              consistency in all marcom materials.
+            </p>
+            <a
+              class="btn work__project-btn"
+              href="https://ileadtaxacademy.in/"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Business Up</h3>
+          <div class="work__img-wrapper work__image2">
+            <img
+              class="lazy loading"
+              data-src="./public/BusinessUpCover.jpg"
+              src="./public/blank900px.jpg"
+              alt="Project 2"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Business Up</h3>
+            <p class="work__project-description1">
+              Business Up, a case study I ran through for my UX/UI project.
+            </p>
+            <p class="work__project-description2">
+              Inorder for people to start a business, there is no proper website
+              or app for guidance. I designed a concept of an app and responsive
+              website from concept to delivery. My responsibilities include
+              conducting surveys, paper and digital wireframing, low and
+              high-fidelity prototyping, conducting usability studies,
+              accounting and accessibility and iterating on designs.
+            </p>
+            <a
+              class="btn work__project-btn"
+              href="./pages/Businessup.html"
+              target="_blank"
+              >Case Study</a
+            >
+            <div class="work__prototype">
+              <a
+                href="https://xd.adobe.com/view/ac56356a-0b84-4899-9317-8b657c29d3ee-f905/"
+                target="_blank"
+                >Business Up Prototype</a
+              >
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <h3 class="work__project-title">Creatuts</h3>
+          <div class="work__img-wrapper work__image3">
+            <img
+              class="lazy loading"
+              data-src="./public/CreatutsCover.jpg"
+              src="./public/blank900px.jpg"
+              alt="Project 3"
+            />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Creatuts</h3>
+            <p class="work__project-description1">
+              Creatuts, a case study I ran through for my UX/UI project.
+            </p>
+            <p class="work__project-description2">
+              Creatuts is an online design tutorial finder concept I designed.
+              Creatuts helps designers search and find proper design tutorials
+              online. My responsibilities include conducting surveys, paper and
+              digital wireframing, low and high-fidelity prototyping, conducting
+              usability studies, accounting and accessibility and iterating on
+              designs.
+            </p>
+            <a
+              class="btn work__project-btn"
+              href="./pages/Creatuts.html"
+              target="_blank"
+              >Case Study</a
+            >
+            <div class="work__prototype">
+              <a
+                href="https://xd.adobe.com/view/4cf7d9f0-5b3b-443b-9829-4e2c7deb6add-19a4/?fullscreen"
+                target="_blank"
+                >Creatuts Prototype</a
+              >
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <h3 class="work__project-title">BeanBrew</h3>
+          <div class="work__img-wrapper work__image4">
+            <img
+              class="lazy loading"
+              data-src="./public/BeanbrewCover.jpg"
+              src="./public/blank900px.jpg"
+              alt="Project 4"
+            />
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">BeanBrew</h3>
+            <p class="work__project-description1">
+              Bean Brew, a case study I ran through for my UX/UI project.
+            </p>
+            <p class="work__project-description2">
+              As most working professionals lack the time for making a healthy
+              meal, I designed a concept of an app for BeanBrew Cafe that allows
+              users to easily order and get delivered fresh and healthy dishes.
+              My responsibilities include conducting surveys, paper and digital
+              wireframing, low and high-fidelity prototyping, conducting
+              usability studies, accounting and accessibility and iterating on
+              designs.
+            </p>
+            <a
+              class="btn work__project-btn"
+              href="./pages/Beanbrew.html"
+              target="_blank"
+              >Case Study</a
+            >
+            <div class="work__prototype">
+              <a
+                href="https://www.figma.com/proto/yrfOd0hcsWEX04HcDuS1Ps/BeanBrew-Cafe-Hi-Fi?page-id=0%3A1&type=design&node-id=0-1&viewport=1186%2C75%2C0.33&t=cfcPU9yp9GbetqWB-1&scaling=scale-down&starting-point-node-id=1%3A5&mode=design"
+                target="_blank"
+                >BeanBrew Prototype</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <h3 class="work__project-title">Design Projects</h3>
+          <div class="work__img-wrapper work__image5">
+            <img
+              class="lazy loading"
+              data-src="./public/BehanceCover.jpg"
+              src="./public/blank900px.jpg"
+              alt="Project 5"
+            />
+          </div>
+          <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">Design Projects</h3>
+            <p class="work__project-description1">
+              My latest featured projects demonstrating digital, UI, motion and
+              print designs.
+            </p>
+
+            <a
+              class="btn work__project-btn"
+              href="https://www.behance.net/madhanraj7b6d1"
+              target="_blank"
+              >Check Now</a
+            >
+          </div>
+          <!-- Project 6 -->
+          <h3 class="work__project-title">My Old Portfolio</h3>
+          <div class="work__img-wrapper work__image6">
+            <img
+              class="lazy loading"
+              data-src="./public/OldSiteCover.jpg"
+              src="./public/blank900px.jpg"
+              alt="Project 6"
+            />
+          </div>
+          <div class="work__project work__content6">
+            <h3 class="work__project-subtitle">Old Portfolio</h3>
+            <p class="work__project-description1">
+              Want to check out my old website! Yo, have a fun ride!
+            </p>
+            <a
+              class="btn work__project-btn"
+              href="https://madhanxc.github.io/"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Let's Talk Creativity</h2>
+        <p class="contact__description">
+          Think we could create something together? Feel free to drop an email.
+        </p>
+        <a
+          class="contact__btn btn"
+          href="mailto:madharaj791@gmail.com"
+          target="_blank"
+          >Get in Touch</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Madhan Raj Radhakrishnan ~</h3>
+    </footer>
+    <script type="module" src="./src/utils/dark-mode.js"></script>
+    <script type="module" src="./src/utils/lazy-loading.js"></script>
+    <script type="module" src="./src/utils/mobile-nav.js"></script>
+
+    <script>
+      window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        if (scroll > 10) {
+          document.querySelector(".header").classList.add("header__active");
+        } else {
+          document.querySelector(".header").classList.remove("header__active");
+        }
+      });
+    </script>
+  </body>
+</html>

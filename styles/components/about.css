@@ -58,8 +58,8 @@
 
 }
 .featured__img-wrapper2{
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 01em;
+    padding-right: 01em;
 }
 /*xs*/
 @media(min-width: 475px) {

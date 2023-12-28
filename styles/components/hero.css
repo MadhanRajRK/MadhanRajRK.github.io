@@ -187,4 +187,44 @@ line-height: 0.9;
 }
 
 /*2xl*/
-/* @media(min-width: 1536px) {}  */
+@media(min-width: 1536px) {
+    .hero{
+        margin-top: 14rem;
+        gap: 2rem;
+        
+    
+    
+    }
+    .hero__img{
+        
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .hero__subtitle{
+    
+    font-size: var(--size-4xl);
+    }
+    .hero__title{
+       
+        font-size: var(--size-6xl);
+        
+    }
+    
+    .hero__description{
+       
+        font-size: var(--size-xl);
+       
+    }
+    .hero__description2{
+       
+        font-size: var(--size-xl);
+       
+    }
+    
+    .hero__btn{
+        font-size: var(--size-xl);
+    
+    }
+    
+}  

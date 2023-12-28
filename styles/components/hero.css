@@ -46,7 +46,21 @@ line-height: 0.9;
 
 }
 
-
+/* xxs */
+@media(min-width: 300px) {
+    .hero{
+        margin-top: 10rem;
+        gap: 1.5rem;
+        
+    
+    }
+    .hero__img{
+        
+        width: 7rem;
+        height: 7rem;
+    }
+    
+    }
 
 /*xs*/
 @media(min-width: 475px) {

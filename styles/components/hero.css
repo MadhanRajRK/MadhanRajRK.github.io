@@ -10,7 +10,6 @@
 }
 .hero__img{
     
-    border-radius: 50%;
     width: 6rem;
     height: 6rem;
 }
@@ -25,7 +24,7 @@ line-height: 0.9;
     text-transform: uppercase;
     font-size: var(--size-4xl);
     letter-spacing: -0.05em;
-    line-height: 0.9;
+    line-height: 1;
 }
 
 .hero__description{
@@ -52,7 +51,7 @@ line-height: 0.9;
 /*xs*/
 @media(min-width: 475px) {
     .hero{
-        margin-top: 7rem;
+        margin-top: 12rem;
         gap: 1.5rem;
         
     
@@ -95,7 +94,16 @@ line-height: 0.9;
 /* @media(min-width: 640px) {}  */
 
 /*md*/
-/* @media(min-width: 768px) {}  */
+@media(min-width: 768px) {
+    .hero{
+        margin-top: 12rem;
+    }
+    .hero__img{
+        
+        width: 10rem;
+        height: 10rem;
+    }  
+} 
 
 /*lg*/
 @media(min-width: 1024px) {
@@ -104,8 +112,8 @@ line-height: 0.9;
     }
     .hero__img{
         
-        width: 8rem;
-        height: 8rem;
+        width: 10rem;
+        height: 10rem;
     }
     
     .hero__subtitle{
@@ -138,7 +146,7 @@ line-height: 0.9;
 /*xl*/
 @media(min-width: 1280px) {
     .hero{
-        margin-top: 10rem;
+        margin-top: 14rem;
         gap: 2rem;
         
     
@@ -146,8 +154,8 @@ line-height: 0.9;
     }
     .hero__img{
         
-        width: 10rem;
-        height: 10rem;
+        width: 12rem;
+        height: 12rem;
     }
     
     .hero__subtitle{
@@ -156,7 +164,7 @@ line-height: 0.9;
     }
     .hero__title{
        
-        font-size: var(--size-9xl);
+        font-size: var(--size-6xl);
         
     }
     

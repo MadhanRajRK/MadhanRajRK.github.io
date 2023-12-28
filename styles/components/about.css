@@ -60,7 +60,17 @@
 .featured__img-wrapper2{
     padding-left: 01em;
     padding-right: 01em;
+    
+   
 }
+ .about__img-wrapper{
+  background-color: e2e2e2;
+ } 
+ .about__img{
+   
+
+ }
+
 /*xs*/
 @media(min-width: 475px) {
     .about{

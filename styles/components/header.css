@@ -18,10 +18,10 @@
 }
 .header__logo {
   width: 75px;
-  
 }
-.logo_container{
-padding-left: 4em}
+.logo_container {
+  padding-left: 4em;
+}
 
 .header__active {
   box-shadow: 0px 10px 12px -15px var(--clr-rose);
@@ -29,8 +29,7 @@ padding-left: 4em}
 
 .header__menu {
   display: none;
-    padding-right : 4em;
-
+  padding-right: 4em;
 }
 
 .header__bars {
@@ -38,18 +37,17 @@ padding-left: 4em}
   width: var(--size-2xl);
   height: var(--size-2xl);
   display: block;
-  
 }
 
 /*xs*/
 /* @media(min-width: 475px) {}  */
 
 /*sm*/
-@media(min-width: 640px) {
-  .logo_container{
-    padding-left: 2em
+@media (min-width: 640px) {
+  .logo_container {
+    padding-left: 2em;
   }
-} 
+}
 
 /*md*/
 @media (min-width: 768px) {
@@ -60,7 +58,6 @@ padding-left: 4em}
     padding-right: 4em;
     gap: 2em;
   }
-  
 
   .header__link {
     font-size: var(--size-xs);
@@ -95,12 +92,11 @@ padding-left: 4em}
 
 /*lg*/
 @media (min-width: 1024px) {
-  
   .header__link {
     font-size: var(--size-sm);
   }
-  .logo_container{
-    padding-left: 4em
+  .logo_container {
+    padding-left: 4em;
   }
   .header__sun {
     width: var(--size-xl);

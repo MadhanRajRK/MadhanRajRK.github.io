@@ -83,6 +83,7 @@ filter: blur(40px) grayscale(100%);
 @media(min-width: 1024px) {
     .container{
         max-width: 1024px;
+        
         .section{
             margin-top: 10rem;
         }
@@ -93,6 +94,7 @@ filter: blur(40px) grayscale(100%);
 @media(min-width: 1280px) {
     .container{
         max-width: 1280px;
+
     }
 }
 

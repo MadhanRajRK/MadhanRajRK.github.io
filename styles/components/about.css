@@ -48,7 +48,7 @@
 
 /* Beanbrew Page Styling */
 .about__title2 {
-  margin-top: 8rem;
+  padding-top: 4rem;
   color: var(--clr-light);
   text-align: center;
 }

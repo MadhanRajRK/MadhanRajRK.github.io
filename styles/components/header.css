@@ -45,7 +45,7 @@
 /*sm*/
 @media (min-width: 640px) {
   .logo_container {
-    padding-left: 2em;
+    padding-left: 1em;
   }
 }
 
@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     list-style: none;
-    padding-right: 4em;
+    padding-right: 2em;
     gap: 2em;
   }
 

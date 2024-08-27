@@ -1,6 +1,6 @@
 :root {
-  --clr-light: #070a13;
-  --clr-dark: #f1f5f9;
+  --clr-light: #1e293b;
+  --clr-dark: #ffffff;
   --clr-slate400: #1e293b;
   --clr-slate600: #475569;
   --clr-slate800: #1e293b;
@@ -36,10 +36,10 @@ html {
 }
 
 .dark-mode {
-  --clr-dark: #070a13;
+  --clr-dark: hsl(223, 12%, 12%);
   --clr-light: #f1f5f9;
   --clr-slate400: ##1e293b;
-  --clr-slate600: #1e293b;
+  --clr-slate600: #ebebeb;
   --clr-slate800: #1e293b;
 }
 body {

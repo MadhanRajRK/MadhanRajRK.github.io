@@ -36,7 +36,7 @@ html {
 }
 
 .dark-mode {
-  --clr-dark: hsl(223, 12%, 12%);
+  --clr-dark: hsl(210, 10%, 8%);
   --clr-light: #f1f5f9;
   --clr-slate400: ##1e293b;
   --clr-slate600: #ebebeb;

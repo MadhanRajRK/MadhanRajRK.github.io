@@ -7,9 +7,9 @@ const darkMode = () => {
 
   //Handlers
   const handleThemeToggle = () => {
-    document.body.classList.toggle("dark-mode");
-    if (document.body.classList.contains("dark-mode")) {
-      localStorage.setItem("theme", "dark-mode");
+    document.body.classList.toggle("light-mode");
+    if (document.body.classList.contains("light-mode")) {
+      localStorage.setItem("theme", "light-mode");
     } else {
       localStorage.removeItem("theme");
       document.body.removeAttribute("class");

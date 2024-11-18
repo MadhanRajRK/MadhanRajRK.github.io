@@ -1,7 +1,7 @@
 :root {
   --clr-dark: #f1f5f9;
-  --clr-light: #0b101e;
-  --clr-slate400: #0b101e;
+  --clr-light: #27282e;
+  --clr-slate400: #27282e;
   --clr-slate600: #2f364b;
   --clr-slate800: #1e293b;
   --clr-rose: #e11d48;
@@ -39,10 +39,10 @@ html {
 
 .light-mode {
   --clr-light: #f1f5f9;
-  --clr-dark: #070a13;
+  --clr-dark: #27282e;
   --clr-slate400: #dfefff;
   --clr-slate600: #dce3ef;
-  --clr-slate800: #1e293b;
+  --clr-slate800: #f3f7ff;
 }
 body {
   font-family: "General Sans", sans-serif;

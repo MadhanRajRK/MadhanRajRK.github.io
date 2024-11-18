@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="../styles/utils.css">
+<link rel="stylesheet" href="../styles/modern-normalize.css">
+<link rel="stylesheet" href="../styles/components/about.css">
+<link rel="stylesheet" href="../styles/components/contact.css">
+<link rel="stylesheet" href="../styles/components/featured.css">
+<link rel="stylesheet" href="../styles/components/footer.css">
+<link rel="stylesheet" href="../styles/components/header.css">
+<link rel="stylesheet" href="../styles/components/hero.css">
+<link rel="stylesheet" href="../styles/components/mobile.css">
+<link rel="stylesheet" href="../styles/components/work.css">
+
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../public/M icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier Lighting and Sign - Task Assigner & Warranty Management - UX</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo_container">
+<a href="/">
+
+  <img class="header__logo"  src="../public/M icon.png"/>
+</a>
+      </div>
+      <nav>
+        
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="/">Home</a>
+          </li>
+          <li>
+            <a class="header__link" href="#about1">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured1">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              class="header__resume btn"
+              href="./public/Madhan-Resume.pdf"
+              target="_blank"
+              >Résumé</a
+            >
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a class="mobile-nav__link" href="/">Home</a></li>
+          <li><a class="mobile-nav__link" href="#about1">About</a></li>
+          <li><a class="mobile-nav__link" href="#featured1">Work</a></li>
+          <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              class="mobile-nav__btn btn"
+              href="./public/Madhan-Resume.pdf"
+              target="_blank"
+              >Résumé</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      
+  <div>
+    <!-- <h2 class="about__title2">BeanBrew Case Study</h2> -->
+</div>
+<div class="featured__img-container">
+  <div class="featured__img-wrapper2">
+   
+    <img src="../public/PLS_Slices/PLS-Full_01.jpg" alt="PLS_Case_Study">
+    <img src="../public/PLS_Slices/PLS-Full_02.jpg" alt="PLS_Case_Study">
+    <img src="../public/PLS_Slices/PLS-Full_03.jpg" alt="PLS_Case_Study">
+    <img src="../public/PLS_Slices/PLS-Full_04.jpg" alt="PLS_Case_Study">
+    <img src="../public/PLS_Slices/PLS-Full_05.jpg" alt="PLS_Case_Study">
+    <h2 class="hero__subtitle">Hi Fidelity Screens - Admin Flow</h2>
+    <img class="screen__img" src="../public/PLSmockups/1.png" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/2.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/3.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/4.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/5.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/6.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/7.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/8.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/9.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/10.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/11.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/12.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/13.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/14.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/15.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/16.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/17.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/18.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/19.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/20.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/21.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/22.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/23.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/24.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/25.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/26.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/27.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/28.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/29.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/30.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/31.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/32.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/33.jpg" alt="PLS_Case_Study">
+    <h2 class="hero__subtitle">Hi Fidelity Screens - Auth Flow - Admin & User</h2>
+    <img class="screen__img" src="../public/PLSmockups/34.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/35.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/36.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/37.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/38.jpg" alt="PLS_Case_Study">
+    <h2 class="hero__subtitle">Hi Fidelity Screens - Dialogs & Dropdowns</h2>
+    <img class="screen__img" src="../public/PLSmockups/39.jpg" alt="PLS_Case_Study">
+    <h2 class="hero__subtitle">Hi Fidelity Screens - User Flow</h2>
+
+    <img class="screen__img" src="../public/PLSmockups/40.png" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/41.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/42.jpg" alt="PLS_Case_Study">
+    <img class="screen__img" src="../public/PLSmockups/43.jpg" alt="PLS_Case_Study">
+    <h2 class="hero__subtitle">Hi Fidelity Screens - Responsive Mobile User Pages</h2>
+
+    <img class="screen__img" src="../public/PLSmockups/44.jpg" alt="PLS_Case_Study">
+ 
+   
+    <img src="../public/PLS_Slices/PLS-Full_06.jpg" alt="PLS_Case_Study">
+   
+    
+  </div>
+  
+
+      </section>
+     
+
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Madhan Raj Radhakrishnan ~</h3>
+    </footer>
+    <script type="module" src="../src/utils/dark-mode.js"></script>
+    <script type="module" src="../src/utils/lazy-loading.js"></script>
+    <script type="module" src="../src/utils/mobile-nav.js"></script>
+    
+    <script>
+      window.addEventListener('scroll', (event) => {
+          let scroll = this.scrollY;
+          if (scroll > 10) {
+            document.querySelector(".header").classList.add("header__active");
+          } else {
+            document.querySelector(".header").classList.remove("header__active");
+          }
+        });
+  
+    </script>
+  </body>
+</html>

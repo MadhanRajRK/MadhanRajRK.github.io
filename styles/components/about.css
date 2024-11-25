@@ -59,6 +59,8 @@
   justify-content: center;
   padding-left: 01em;
   padding-right: 01em;
+  padding-top: 6em;
+
 }
 .about__img-wrapper {
   background-color: e2e2e2;
@@ -95,6 +97,9 @@
   .featured__img-wrapper2 {
     padding-left: 2em;
     padding-right: 2em;
+    padding-top: 5em;
+
+ 
   }
   /* Beanbrew Page Styling */
   .about__title2 {
@@ -116,6 +121,7 @@
   .featured__img-wrapper2 {
     padding-left: 5em;
     padding-right: 5em;
+   padding-top: 5em;
   }
 }
 
@@ -144,7 +150,7 @@
     font-size: var(--size-lg);
   }
   .featured__img-wrapper2 {
-    padding-top: 100px;;
+    padding-top: 5em;
     padding-left: 10em;
     padding-right: 10em;
   }
@@ -180,6 +186,7 @@
   .featured__img-wrapper2 {
     padding-left: 10em;
     padding-right: 10em;
+    
   }
   .about__title2 {
     font-size: var(--size-5xl);
